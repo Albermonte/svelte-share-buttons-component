@@ -8,7 +8,9 @@
 	import ShareButton from "./ShareButton.svelte";
 	let href;
 
-	$: href = encodeURI(`https://api.whatsapp.com/send?text=${text}`);
+	$: href = encodeURI(
+		`https://api.whatsapp.com/send?text=${text.replace("%23", "#")}`,
+	);
 </script>
 
 <ShareButton

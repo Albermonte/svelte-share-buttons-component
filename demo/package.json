@@ -1,21 +1,21 @@
 {
-  "name": "demo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/polyfill": "^7.8.7",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-svelte": "^4.0.8",
-    "svelte": "^3.37.0"
-  },
-  "dependencies": {
-    "svelte-share-buttons-component": "git+https://git@github.com/pchynoweth/svelte-share-buttons-component.git"
-  }
+	"name": "demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel index.html",
+		"build": "parcel build index.html"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/polyfill": "^7.8.7",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-svelte": "^4.0.8",
+		"svelte": "^3.37.0"
+	},
+	"dependencies": {
+		"svelte-share-buttons-component": "../"
+	}
 }

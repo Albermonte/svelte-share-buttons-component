@@ -9,7 +9,8 @@
 
 	import ShareButton from "./ShareButton.svelte";
 	let href;
-	const origin = isMobile
+
+	const origin = isMobile(window.navigator).any
 		? "whatsapp://send?text="
 		: "https://web.whatsapp.com/send?text=";
 

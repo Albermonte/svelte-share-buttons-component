@@ -1992,7 +1992,7 @@ function add_css$1() {
 	append(document.head, style);
 }
 
-// (19:0) <ShareButton   class="ssbc-button--whatsapp {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
+// (20:0) <ShareButton   class="ssbc-button--whatsapp {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
 function create_default_slot$1(ctx) {
 	let svg;
 	let path;
@@ -2087,8 +2087,9 @@ function instance$1($$self, $$props, $$invalidate) {
 	let { ariaLabel = "Share on WhatsApp" } = $$props;
 	let { class: classes = "" } = $$props;
 	let href;
+	console.log("isMobile: ", isMobile(window.navigator).any);
 
-	const origin = isMobile
+	const origin = isMobile(window.navigator).any
 	? "whatsapp://send?text="
 	: "https://web.whatsapp.com/send?text=";
 

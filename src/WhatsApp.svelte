@@ -1,6 +1,4 @@
 <script>
-	import isMobile from "ismobilejs";
-
 	export let text;
 	export let ariaLabel = "Share on WhatsApp";
 	let classes = "";
@@ -10,11 +8,7 @@
 	import ShareButton from "./ShareButton.svelte";
 	let href;
 
-	const origin = isMobile(window.navigator).any
-		? "whatsapp://send?text="
-		: "https://web.whatsapp.com/send?text=";
-
-	$: href = encodeURI(`${origin}${text}`);
+	$: href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
 </script>
 
 <ShareButton

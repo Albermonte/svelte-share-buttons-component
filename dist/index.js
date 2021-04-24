@@ -512,12 +512,12 @@
 
     function add_css$b() {
     	var style = element("style");
-    	style.id = "svelte-3e9xyf-style";
+    	style.id = "svelte-k827lo-style";
     	style.textContent = ".ssbc-button--email{background-color:#777777}.ssbc-button--email:active,.ssbc-button--email:hover{background-color:#5e5e5e}";
     	append(document.head, style);
     }
 
-    // (26:0) <ShareButton class="ssbc-button--email {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (17:0) <ShareButton   class="ssbc-button--email {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$b(ctx) {
     	let svg;
     	let path;
@@ -625,7 +625,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*subject, body*/ 48) {
-    			$$invalidate(2, href = encodeURI(`mailto:?subject=${subject}&body=${body}`));
+    			$$invalidate(2, href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
     		}
     	};
 
@@ -635,7 +635,7 @@
     class Email extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-3e9xyf-style")) add_css$b();
+    		if (!document.getElementById("svelte-k827lo-style")) add_css$b();
 
     		init(this, options, instance$b, create_fragment$b, safe_not_equal, {
     			subject: 4,
@@ -650,12 +650,12 @@
 
     function add_css$a() {
     	var style = element("style");
-    	style.id = "svelte-15d9e9c-style";
+    	style.id = "svelte-1jorsm5-style";
     	style.textContent = ".ssbc-button--facebook{background-color:#3b5998}.ssbc-button--facebook:active,.ssbc-button--facebook:hover{background-color:#2d4373}";
     	append(document.head, style);
     }
 
-    // (25:0) <ShareButton class="ssbc-button--facebook {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (16:0) <ShareButton   class="ssbc-button--facebook {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$a(ctx) {
     	let svg;
     	let path;
@@ -761,7 +761,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*url*/ 16) {
-    			$$invalidate(2, href = encodeURI(`https://facebook.com/sharer/sharer.php?u=${url}`));
+    			$$invalidate(2, href = `https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`);
     		}
     	};
 
@@ -771,7 +771,7 @@
     class Facebook extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-15d9e9c-style")) add_css$a();
+    		if (!document.getElementById("svelte-1jorsm5-style")) add_css$a();
     		init(this, options, instance$a, create_fragment$a, safe_not_equal, { url: 4, ariaLabel: 0, class: 1 });
     	}
     }
@@ -780,12 +780,12 @@
 
     function add_css$9() {
     	var style = element("style");
-    	style.id = "svelte-15xrllp-style";
-    	style.textContent = ".ssbc-button--hacker-news{background-color:#FF6600}.ssbc-button--hacker-news:active,.ssbc-button--hacker-news:hover{background-color:#FB6200}";
+    	style.id = "svelte-1vsxc4m-style";
+    	style.textContent = ".ssbc-button--hacker-news{background-color:#ff6600}.ssbc-button--hacker-news:active,.ssbc-button--hacker-news:hover{background-color:#fb6200}";
     	append(document.head, style);
     }
 
-    // (26:0) <ShareButton class="ssbc-button--hacker-news {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (17:0) <ShareButton   class="ssbc-button--hacker-news {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$9(ctx) {
     	let svg;
     	let path;
@@ -894,7 +894,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*url, title*/ 48) {
-    			$$invalidate(2, href = encodeURI(`https://news.ycombinator.com/submitlink?u=${url}&t=${title}`));
+    			$$invalidate(2, href = `https://news.ycombinator.com/submitlink?u=${encodeURIComponent(url)}&t=${encodeURIComponent(title)}`);
     		}
     	};
 
@@ -904,7 +904,7 @@
     class HackerNews extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-15xrllp-style")) add_css$9();
+    		if (!document.getElementById("svelte-1vsxc4m-style")) add_css$9();
     		init(this, options, instance$9, create_fragment$9, safe_not_equal, { title: 4, url: 5, ariaLabel: 0, class: 1 });
     	}
     }
@@ -913,12 +913,12 @@
 
     function add_css$8() {
     	var style = element("style");
-    	style.id = "svelte-163tckm-style";
+    	style.id = "svelte-1tu54i5-style";
     	style.textContent = ".ssbc-button--linkedin{background-color:#0077b5}.ssbc-button--linkedin:active,.ssbc-button--linkedin:hover{background-color:#046293}";
     	append(document.head, style);
     }
 
-    // (25:0) <ShareButton class="ssbc-button--linkedin {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (16:0) <ShareButton   class="ssbc-button--linkedin {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$8(ctx) {
     	let svg;
     	let path;
@@ -1024,7 +1024,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*url*/ 16) {
-    			$$invalidate(2, href = encodeURI(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`));
+    			$$invalidate(2, href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`);
     		}
     	};
 
@@ -1034,7 +1034,7 @@
     class LinkedIn extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-163tckm-style")) add_css$8();
+    		if (!document.getElementById("svelte-1tu54i5-style")) add_css$8();
     		init(this, options, instance$8, create_fragment$8, safe_not_equal, { url: 4, ariaLabel: 0, class: 1 });
     	}
     }
@@ -1043,12 +1043,12 @@
 
     function add_css$7() {
     	var style = element("style");
-    	style.id = "svelte-tgy9sk-style";
+    	style.id = "svelte-4trtp7-style";
     	style.textContent = ".ssbc-button--pinterest{background-color:#bd081c}.ssbc-button--pinterest:active,.ssbc-button--pinterest:hover{background-color:#8c0615}";
     	append(document.head, style);
     }
 
-    // (27:0) <ShareButton class="ssbc-button--pinterest {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (20:0) <ShareButton   class="ssbc-button--pinterest {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$7(ctx) {
     	let svg;
     	let path;
@@ -1158,7 +1158,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*url, media, description*/ 112) {
-    			$$invalidate(2, href = encodeURI(`https://pinterest.com/pin/create/button/?url=${url}&media=${media}&description=${description}`));
+    			$$invalidate(2, href = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&media=${encodeURIComponent(media)}&description=${encodeURIComponent(description)}`);
     		}
     	};
 
@@ -1168,7 +1168,7 @@
     class Pinterest extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-tgy9sk-style")) add_css$7();
+    		if (!document.getElementById("svelte-4trtp7-style")) add_css$7();
 
     		init(this, options, instance$7, create_fragment$7, safe_not_equal, {
     			description: 4,
@@ -1184,12 +1184,12 @@
 
     function add_css$6() {
     	var style = element("style");
-    	style.id = "svelte-1trhwhz-style";
+    	style.id = "svelte-14jti76-style";
     	style.textContent = ".ssbc-button--reddit{background-color:#5f99cf}.ssbc-button--reddit:active,.ssbc-button--reddit:hover{background-color:#3a80c1}";
     	append(document.head, style);
     }
 
-    // (26:0) <ShareButton class="ssbc-button--reddit {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (17:0) <ShareButton   class="ssbc-button--reddit {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$6(ctx) {
     	let svg;
     	let path;
@@ -1297,7 +1297,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*url, title*/ 48) {
-    			$$invalidate(2, href = encodeURI(`https://reddit.com/submit/?url=${url}&resubmit=true&title=${title}`));
+    			$$invalidate(2, href = `https://reddit.com/submit/?url=${encodeURIComponent(url)}&resubmit=true&title=${encodeURIComponent(title)}`);
     		}
     	};
 
@@ -1307,7 +1307,7 @@
     class Reddit extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-1trhwhz-style")) add_css$6();
+    		if (!document.getElementById("svelte-14jti76-style")) add_css$6();
     		init(this, options, instance$6, create_fragment$6, safe_not_equal, { title: 4, url: 5, ariaLabel: 0, class: 1 });
     	}
     }
@@ -1316,12 +1316,12 @@
 
     function add_css$5() {
     	var style = element("style");
-    	style.id = "svelte-1qms23-style";
-    	style.textContent = ".ssbc-button--telegram{background-color:#54A9EB}.ssbc-button--telegram:active,.ssbc-button--telegram:hover{background-color:#4B97D1}";
+    	style.id = "svelte-fjq6ci-style";
+    	style.textContent = ".ssbc-button--telegram{background-color:#54a9eb}.ssbc-button--telegram:active,.ssbc-button--telegram:hover{background-color:#4b97d1}";
     	append(document.head, style);
     }
 
-    // (26:0) <ShareButton class="ssbc-button--telegram {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (17:0) <ShareButton   class="ssbc-button--telegram {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$5(ctx) {
     	let svg;
     	let path;
@@ -1429,7 +1429,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*text, url*/ 48) {
-    			$$invalidate(2, href = encodeURI(`https://telegram.me/share/url?text=${text}&url=${url}`));
+    			$$invalidate(2, href = `https://telegram.me/share/url?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`);
     		}
     	};
 
@@ -1439,7 +1439,7 @@
     class Telegram extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-1qms23-style")) add_css$5();
+    		if (!document.getElementById("svelte-fjq6ci-style")) add_css$5();
     		init(this, options, instance$5, create_fragment$5, safe_not_equal, { text: 4, url: 5, ariaLabel: 0, class: 1 });
     	}
     }
@@ -1448,12 +1448,12 @@
 
     function add_css$4() {
     	var style = element("style");
-    	style.id = "svelte-x1za0j-style";
-    	style.textContent = ".ssbc-button--tumblr{background-color:#35465C}.ssbc-button--tumblr:active,.ssbc-button--tumblr:hover{background-color:#222d3c}";
+    	style.id = "svelte-1pjpnmm-style";
+    	style.textContent = ".ssbc-button--tumblr{background-color:#35465c}.ssbc-button--tumblr:active,.ssbc-button--tumblr:hover{background-color:#222d3c}";
     	append(document.head, style);
     }
 
-    // (27:0) <ShareButton class="ssbc-button--tumblr {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (20:0) <ShareButton   class="ssbc-button--tumblr {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$4(ctx) {
     	let svg;
     	let path;
@@ -1563,7 +1563,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*title, caption, url*/ 112) {
-    			$$invalidate(2, href = encodeURI(`https://www.tumblr.com/widgets/share/tool?posttype=link&title=${title}&caption=${caption}&content=${url}&canonicalUrl=${url}&shareSource=tumblr_share_button`));
+    			$$invalidate(2, href = `https://www.tumblr.com/widgets/share/tool?posttype=link&title=${encodeURIComponent(title)}&caption=${encodeURIComponent(caption)}&content=${encodeURIComponent(url)}&canonicalUrl=${encodeURIComponent(url)}&shareSource=tumblr_share_button`);
     		}
     	};
 
@@ -1573,7 +1573,7 @@
     class Tumblr extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-x1za0j-style")) add_css$4();
+    		if (!document.getElementById("svelte-1pjpnmm-style")) add_css$4();
 
     		init(this, options, instance$4, create_fragment$4, safe_not_equal, {
     			title: 4,
@@ -1589,12 +1589,12 @@
 
     function add_css$3() {
     	var style = element("style");
-    	style.id = "svelte-hfnfez-style";
+    	style.id = "svelte-1nd0vc4-style";
     	style.textContent = ".ssbc-button--twitter{background-color:#55acee}.ssbc-button--twitter:active,.ssbc-button--twitter:hover{background-color:#2795e9}";
     	append(document.head, style);
     }
 
-    // (29:0) <ShareButton class="ssbc-button--twitter {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (22:0) <ShareButton   class="ssbc-button--twitter {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$3(ctx) {
     	let svg;
     	let path;
@@ -1708,7 +1708,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*text, hashtags, via, related, url*/ 496) {
-    			$$invalidate(2, href = encodeURI(`https://twitter.com/intent/tweet/?text=${text}&hashtags=${hashtags}&via=${via}&related=${related}&url=${url}`));
+    			$$invalidate(2, href = `https://twitter.com/intent/tweet/?text=${encodeURIComponent(text)}&hashtags=${encodeURIComponent(hashtags)}&via=${encodeURIComponent(via)}&related=${encodeURIComponent(related)}&url=${encodeURIComponent(url)}`);
     		}
     	};
 
@@ -1718,7 +1718,7 @@
     class Twitter extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-hfnfez-style")) add_css$3();
+    		if (!document.getElementById("svelte-1nd0vc4-style")) add_css$3();
 
     		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
     			text: 4,
@@ -1736,12 +1736,12 @@
 
     function add_css$2() {
     	var style = element("style");
-    	style.id = "svelte-he0kdi-style";
+    	style.id = "svelte-1qswumb-style";
     	style.textContent = ".ssbc-button--vk{background-color:#507299}.ssbc-button--vk:active,.ssbc-button--vk:hover{background-color:#43648c}";
     	append(document.head, style);
     }
 
-    // (26:0) <ShareButton class="ssbc-button--vk {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (17:0) <ShareButton   class="ssbc-button--vk {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$2(ctx) {
     	let svg;
     	let path;
@@ -1849,7 +1849,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*title, url*/ 48) {
-    			$$invalidate(2, href = encodeURI(`http://vk.com/share.php?title=${title}&url=${url}`));
+    			$$invalidate(2, href = `http://vk.com/share.php?title=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`);
     		}
     	};
 
@@ -1859,134 +1859,9 @@
     class Vk extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-he0kdi-style")) add_css$2();
+    		if (!document.getElementById("svelte-1qswumb-style")) add_css$2();
     		init(this, options, instance$2, create_fragment$2, safe_not_equal, { title: 4, url: 5, ariaLabel: 0, class: 1 });
     	}
-    }
-
-    var appleIphone = /iPhone/i;
-    var appleIpod = /iPod/i;
-    var appleTablet = /iPad/i;
-    var appleUniversal = /\biOS-universal(?:.+)Mac\b/i;
-    var androidPhone = /\bAndroid(?:.+)Mobile\b/i;
-    var androidTablet = /Android/i;
-    var amazonPhone = /(?:SD4930UR|\bSilk(?:.+)Mobile\b)/i;
-    var amazonTablet = /Silk/i;
-    var windowsPhone = /Windows Phone/i;
-    var windowsTablet = /\bWindows(?:.+)ARM\b/i;
-    var otherBlackBerry = /BlackBerry/i;
-    var otherBlackBerry10 = /BB10/i;
-    var otherOpera = /Opera Mini/i;
-    var otherChrome = /\b(CriOS|Chrome)(?:.+)Mobile/i;
-    var otherFirefox = /Mobile(?:.+)Firefox\b/i;
-    var isAppleTabletOnIos13 = function (navigator) {
-        return (typeof navigator !== 'undefined' &&
-            navigator.platform === 'MacIntel' &&
-            typeof navigator.maxTouchPoints === 'number' &&
-            navigator.maxTouchPoints > 1 &&
-            typeof MSStream === 'undefined');
-    };
-    function createMatch(userAgent) {
-        return function (regex) { return regex.test(userAgent); };
-    }
-    function isMobile(param) {
-        var nav = {
-            userAgent: '',
-            platform: '',
-            maxTouchPoints: 0
-        };
-        if (!param && typeof navigator !== 'undefined') {
-            nav = {
-                userAgent: navigator.userAgent,
-                platform: navigator.platform,
-                maxTouchPoints: navigator.maxTouchPoints || 0
-            };
-        }
-        else if (typeof param === 'string') {
-            nav.userAgent = param;
-        }
-        else if (param && param.userAgent) {
-            nav = {
-                userAgent: param.userAgent,
-                platform: param.platform,
-                maxTouchPoints: param.maxTouchPoints || 0
-            };
-        }
-        var userAgent = nav.userAgent;
-        var tmp = userAgent.split('[FBAN');
-        if (typeof tmp[1] !== 'undefined') {
-            userAgent = tmp[0];
-        }
-        tmp = userAgent.split('Twitter');
-        if (typeof tmp[1] !== 'undefined') {
-            userAgent = tmp[0];
-        }
-        var match = createMatch(userAgent);
-        var result = {
-            apple: {
-                phone: match(appleIphone) && !match(windowsPhone),
-                ipod: match(appleIpod),
-                tablet: !match(appleIphone) &&
-                    (match(appleTablet) || isAppleTabletOnIos13(nav)) &&
-                    !match(windowsPhone),
-                universal: match(appleUniversal),
-                device: (match(appleIphone) ||
-                    match(appleIpod) ||
-                    match(appleTablet) ||
-                    match(appleUniversal) ||
-                    isAppleTabletOnIos13(nav)) &&
-                    !match(windowsPhone)
-            },
-            amazon: {
-                phone: match(amazonPhone),
-                tablet: !match(amazonPhone) && match(amazonTablet),
-                device: match(amazonPhone) || match(amazonTablet)
-            },
-            android: {
-                phone: (!match(windowsPhone) && match(amazonPhone)) ||
-                    (!match(windowsPhone) && match(androidPhone)),
-                tablet: !match(windowsPhone) &&
-                    !match(amazonPhone) &&
-                    !match(androidPhone) &&
-                    (match(amazonTablet) || match(androidTablet)),
-                device: (!match(windowsPhone) &&
-                    (match(amazonPhone) ||
-                        match(amazonTablet) ||
-                        match(androidPhone) ||
-                        match(androidTablet))) ||
-                    match(/\bokhttp\b/i)
-            },
-            windows: {
-                phone: match(windowsPhone),
-                tablet: match(windowsTablet),
-                device: match(windowsPhone) || match(windowsTablet)
-            },
-            other: {
-                blackberry: match(otherBlackBerry),
-                blackberry10: match(otherBlackBerry10),
-                opera: match(otherOpera),
-                firefox: match(otherFirefox),
-                chrome: match(otherChrome),
-                device: match(otherBlackBerry) ||
-                    match(otherBlackBerry10) ||
-                    match(otherOpera) ||
-                    match(otherFirefox) ||
-                    match(otherChrome)
-            },
-            any: false,
-            phone: false,
-            tablet: false
-        };
-        result.any =
-            result.apple.device ||
-                result.android.device ||
-                result.windows.device ||
-                result.other.device;
-        result.phone =
-            result.apple.phone || result.android.phone || result.windows.phone;
-        result.tablet =
-            result.apple.tablet || result.android.tablet || result.windows.tablet;
-        return result;
     }
 
     /* src\WhatsApp.svelte generated by Svelte v3.37.0 */
@@ -1998,7 +1873,7 @@
     	append(document.head, style);
     }
 
-    // (20:0) <ShareButton   class="ssbc-button--whatsapp {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
+    // (14:0) <ShareButton   class="ssbc-button--whatsapp {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot$1(ctx) {
     	let svg;
     	let path;
@@ -2065,7 +1940,7 @@
     				])
     			: {};
 
-    			if (dirty & /*$$scope*/ 64) {
+    			if (dirty & /*$$scope*/ 32) {
     				sharebutton_changes.$$scope = { dirty, ctx };
     			}
 
@@ -2093,11 +1968,6 @@
     	let { ariaLabel = "Share on WhatsApp" } = $$props;
     	let { class: classes = "" } = $$props;
     	let href;
-    	console.log("isMobile: ", isMobile(window.navigator).any);
-
-    	const origin = isMobile(window.navigator).any
-    	? "whatsapp://send?text="
-    	: "https://web.whatsapp.com/send?text=";
 
     	$$self.$$set = $$new_props => {
     		$$props = assign(assign({}, $$props), exclude_internal_props($$new_props));
@@ -2109,7 +1979,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*text*/ 16) {
-    			$$invalidate(2, href = encodeURI(`${origin}${text}`));
+    			$$invalidate(2, href = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`);
     		}
     	};
 
@@ -2128,12 +1998,12 @@
 
     function add_css() {
     	var style = element("style");
-    	style.id = "svelte-xr6cum-style";
-    	style.textContent = ".ssbc-button--xing{background-color:#1a7576}.ssbc-button--xing:active,.ssbc-button--xing:hover{background-color:#114C4C}";
+    	style.id = "svelte-7wdbp5-style";
+    	style.textContent = ".ssbc-button--xing{background-color:#1a7576}.ssbc-button--xing:active,.ssbc-button--xing:hover{background-color:#114c4c}";
     	append(document.head, style);
     }
 
-    // (26:0) <ShareButton class="ssbc-button--xing {classes}" {...$$restProps} {ariaLabel} {href}>
+    // (17:0) <ShareButton   class="ssbc-button--xing {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
     function create_default_slot(ctx) {
     	let svg;
     	let path;
@@ -2241,7 +2111,7 @@
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*url, title*/ 48) {
-    			$$invalidate(2, href = encodeURI(`https://www.xing.com/app/user?op=share;url=${url};title=${title}`));
+    			$$invalidate(2, href = `https://www.xing.com/app/user?op=share;url=${encodeURIComponent(url)};title=${encodeURIComponent(title)}`);
     		}
     	};
 
@@ -2251,7 +2121,7 @@
     class Xing extends SvelteComponent {
     	constructor(options) {
     		super();
-    		if (!document.getElementById("svelte-xr6cum-style")) add_css();
+    		if (!document.getElementById("svelte-7wdbp5-style")) add_css();
     		init(this, options, instance, create_fragment, safe_not_equal, { title: 4, url: 5, ariaLabel: 0, class: 1 });
     	}
     }

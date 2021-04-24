@@ -1867,7 +1867,7 @@ function add_css$1() {
 	append(document.head, style);
 }
 
-// (14:0) <ShareButton   class="ssbc-button--whatsapp {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
+// (16:0) <ShareButton   class="ssbc-button--whatsapp {classes}"   {...$$restProps}   {ariaLabel}   {href}  >
 function create_default_slot$1(ctx) {
 	let svg;
 	let path;
@@ -1973,7 +1973,7 @@ function instance$1($$self, $$props, $$invalidate) {
 
 	$$self.$$.update = () => {
 		if ($$self.$$.dirty & /*text*/ 16) {
-			$$invalidate(2, href = encodeURI(`https://api.whatsapp.com/send?text=${text}`));
+			$$invalidate(2, href = encodeURI(`https://api.whatsapp.com/send?text=${text.replace("%23", "#")}`));
 		}
 	};
 
